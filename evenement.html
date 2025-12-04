@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événement - NarAction</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/evenement.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles spécifiques à la page Événement */
+        
+        /* En-tête de la page (similaire à Atelier, mais avec une nouvelle image) */
+        .page-header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/evenement_background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .page-header h1 {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-size: 1.1em;
+        }
+
+        /* Section Liste des Événements */
+        .events-list-section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .events-list-section h2 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .no-events-message {
+            background-color: #ffe0b2; /* Couleur orange très claire */
+            color: var(--text-dark);
+            padding: 40px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-color);
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        /* Section Avis (Témoignages) - Réutilisation des styles de la page Atelier */
+        .testimonials-section {
+            background-color: var(--background-dark); /* Changement de fond pour varier le rythme visuel */
+            color: var(--text-light);
+            padding: 60px 20px;
+        }
+
+        .testimonials-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            color: var(--primary-color); /* Couleur primaire pour le titre */
+        }
+
+        .testimonial-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Moins de colonnes si seulement 2 avis */
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.95); /* Fond presque blanc sur fond sombre */
+            color: var(--text-dark);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(245, 166, 35, 0.2);
+            position: relative;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .testimonial-card .author {
+            display: block;
+            text-align: right;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stars {
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="image/logo_naraction.png" alt="Logo NarAction">
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="atelier.html">Atelier</a>
+                <a href="#" class="active">Événement</a>
+                <a href="avls.html">AVLS</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="language-selector">
+                <span data-lang="fr" class="lang-option active-lang" title="Français">🇫🇷</span>
+                <span data-lang="es" class="lang-option" title="Espagnol">🇪🇸</span>
+                <span data-lang="en" class="lang-option" title="Anglais">🇬🇧</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Nos Événements</h1>
+            <p>Retrouvez ici toutes nos rencontres, nos signatures et nos rassemblements spéciaux.</p>
+        </section>
+
+        <section class="events-list-section">
+            <h2>Événements à Venir</h2>
+            
+            <div class="no-events-message">
+                Aucun événement prévu pour le moment.
+            </div>
+
+            </section>
+
+        <section class="testimonials-section">
+            <h2>Ils ont aimé nos événements</h2>
+            <div class="testimonial-container">
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+                    </div>
+                    <p>En janvier 2025, j'ai participé à un atelier de NarAction qui s'est déroulé dans une atmosphère détendue qui a boosté ma créativité. L'échange créatif avec des personnes inspirantes m'a passionnée, surtout parce qu'il était marqué par des perspectives culturelles et artistiques variées.</p>
+                    <span class="author">Marie Dupont</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+                    </div>
+                    <p>Les ateliers de NarAction sont une expérience enrichissante qui favorise l'épanouissement et la diversité culturelle.</p>
+                    <span class="author">Kyllian</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 NarAction. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Politique de Confidentialité</a> |
+                <a href="#">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
