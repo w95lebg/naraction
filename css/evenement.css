@@ -1,7 +1,7 @@
 /* Styles spécifiques à la page Événement (evenement.html) */
 
 .page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/evenement_background.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/evenement_background.png');
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -85,4 +85,9 @@
     text-align: right;
     font-weight: 700;
     color: var(--primary-color);
+}
+
+.imageseveenements img {
+    width: 400px;
+    height: 280px;
 }
